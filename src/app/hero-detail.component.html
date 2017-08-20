@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div *ngIf="hero">
+  <h2>{{hero.name}}</h2>
+  <div>
+    <label>id: </label>{{hero.id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name" />
+    <img [src]=hero.ImgSrc width="200" height="200">
+    <label>size :</label>{{hero.size}}
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>
+</body>
+</html>
