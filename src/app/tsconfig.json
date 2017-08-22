@@ -3,7 +3,10 @@
     "module": "commonjs",
     "experimentalDecorators": true,
     "target": "es2015",
-    "sourceMap": true
+    "sourceMap": true,
+    "types": [
+      "hammerjs"
+    ]
   },
   "exclude": [
     "node_modules"

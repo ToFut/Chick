@@ -5,10 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+<button md-icon-button >
+  <md-icon>more_vert</md-icon>
+</button>
 <div *ngIf="hero">
   <h2>{{hero.name}}</h2>
   <div>
     <label>id: </label>{{hero.id}}</div>
+  <md-menu >
+    <button md-menu-item> Settings </button>
+    <button md-menu-item> Help </button>
+  </md-menu>
+
   <div>
     <label>name: </label>
     <input [(ngModel)]="hero.name" placeholder="name" />
